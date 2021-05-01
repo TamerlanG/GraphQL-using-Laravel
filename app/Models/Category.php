@@ -10,4 +10,8 @@ class Category extends Model
     use HasFactory;
 
     protected $fillable = ['title'];
+
+    public function quests(){
+        return $this->hasMany(Quest::class);
+    }
 }
