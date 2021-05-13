@@ -26,6 +26,10 @@ class CategoryType extends GraphQLType
             'title' => [
                 'type' => Type::nonNull(Type::string()),
                 'description' => 'Title of the quest'
+            ],
+            'quests' => [
+                'type' => Type::listOf(GraphQL::type('Quest')),
+                'description' => 'List of quests'
             ]
         ];
     }
