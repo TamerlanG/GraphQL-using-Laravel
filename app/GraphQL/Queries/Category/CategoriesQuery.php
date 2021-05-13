@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\GraphQL\Queries;
+namespace App\GraphQL\Queries\Category;
 
 
 use App\Models\Category;

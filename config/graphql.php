@@ -102,10 +102,10 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-                'quest' => \App\GraphQL\Queries\QuestQuery::class,
-                'quests' => \App\GraphQL\Queries\QuestsQuery::class,
-                'category' => \App\GraphQL\Queries\CategoryQuery::class,
-                'categories' => \App\GraphQL\Queries\CategoriesQuery::class,
+                'quest' => \App\GraphQL\Queries\Quest\QuestQuery::class,
+                'quests' => \App\GraphQL\Queries\Quest\QuestsQuery::class,
+                'category' => \App\GraphQL\Queries\Category\CategoryQuery::class,
+                'categories' => \App\GraphQL\Queries\Category\CategoriesQuery::class,
             ],
             'mutation' => [
                 'createQuest' => \App\GraphQL\Mutations\Quest\CreateQuestMutation::class,
